@@ -75,6 +75,7 @@ public class SolutionTest {
         for(Map.Entry<Integer, Integer> entry: resultMap.entrySet()) {
             assertEquals(entry.getValue().intValue(), countMap1.getCount(entry.getKey()));
         }
+        resultMap.clear();
 
         CountMap countMap2 = Solution.getCountMap();
         countMap2.add(12);
